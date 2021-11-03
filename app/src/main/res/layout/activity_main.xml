@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202020"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textColor="#FF5800"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dashboard"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_anggota"
+        android:layout_marginTop="85dp"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        tools:listitem="@layout/detail_car">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>
